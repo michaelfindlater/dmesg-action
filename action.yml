@@ -1,0 +1,5 @@
+name: 'dmesg output'
+description: 'runs dmesg'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
