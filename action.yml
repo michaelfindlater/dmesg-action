@@ -1,5 +1,8 @@
-name: 'dmesg output'
+name: 'dmesg'
 description: 'runs dmesg'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: 'composite'
+  steps:
+    - name: dmesg
+      run: |
+        sudo dmesg
